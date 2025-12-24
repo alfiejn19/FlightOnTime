@@ -50,18 +50,43 @@ block
 1. Que los **aeropuertos** puedan planificar mejor el uso de su infraestructura.
 2. Que las **aerolíneas** puedan ajustar la operación y minimizen costos extras.
 3. Que los **pasajeros** puedan recibir alertas para planear su llegada al aeropuerto.
-
-### ¿Como podríamos medir la efectividad de nuestro sistema?*
 </details>
 
 <details open>
-<summary>Desarrollo</summary>
+<summary>Estructura del proyecto (DS)</summary>
   
-## Desarrollo del proyecto:
-
-### Data Science
-
-### Back-End
+## Estructura del proyecto (Data Science):
+```mermaid
+block
+  columns 6
+  a["Repositorio: flight-on-time-ds "]:2
+    block:groupa:6
+    columns 2
+    b["Data"]:1
+    c["Notebooks"]:1
+        block:groupb1:1
+        b1("Dataset: Flight Delay 2018-2024"):1
+        b2("Dataset limpio"):1
+        end
+        block:groupc1:1
+        c1("Análisis exploratorio(.ipynb)"):1
+        c2("Entrenamiento(.ipynb)"):1
+        c3("Predicción(.ipynb)"):1
+        end
+    d["Models"]:1
+    e["Src"]:1
+        block:groupd1:1
+        d1("Modelo final entrenado(.joblib)"):1
+        d2("Codificador(.joblib)"):1
+        end
+        block:groupe1:1
+        e1("Configuración API (FastAPI)"):1
+        e2("Otros"):1
+        end
+    f["Requiriments.txt"]:1
+    g[".gitignore"]:1 
+    end
+```
 </details>
 
 
